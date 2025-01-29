@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat</title>
+    <style>
+        /* Default styles (for large screens) */
+        body{
+            background-color: black;
+        }
+        #d {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap; /* Ensure that items can wrap onto the next line */
+        }
+        #s1, #s2 {
+            width: 48%; /* Adjust width to create space between images */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        /* Responsive styles for small screens (portrait mode) */
+        @media (max-width: 800px) {
+            #s1, #s2 {
+                width: 100%; /* Stack images vertically on smaller screens */
+                margin-bottom: 10px; /* Space between stacked images */
+            }
+        }
+
+        /* Optional: Adjust for landscape mode */
+        @media (orientation: landscape) {
+            #s1, #s2 {
+                width: 48%; /* Keep images side by side in landscape mode */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="d">
+        <img id="s1" src="./IMG_20250129_215137_078.jpg" alt="">
+        <img id="s2" src="./IMG_20250129_215137_636.jpg" alt="">
+    </div>
+</body>
+</html>
